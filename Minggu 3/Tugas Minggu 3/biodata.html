@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pemrograman Web - Rajendra Nohan</title>
+    <style>
+        /* Import  Font*/
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        /* Universal CSS */
+        body{
+            font-family: 'Lato', sans-serif;
+            line-height: 1.42857143;
+            background-color: #fafafa;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* Responsive CSS */
+        @media (min-width: 1215px){
+            .col-gambar {
+                width: 25%;
+            }
+            .col-biodata {
+                width: 66.66669%;
+            }
+            .col-full {
+                width: 100%;
+            }
+            .col-full, .col-gambar, .col-biodata{
+                float: left;
+            }
+            .col-full, .col-gambar, .col-biodata{
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+        /* Tabel */
+        .tabel {
+            min-width: 100%;
+            margin-bottom: 20px;
+        }
+        .tabel-responsive {
+            min-height: .01%;
+            overflow-x: auto;
+        }
+        .tabel-responsive td,.tabel-responsive tr,.tabel-responsive th{
+            border: 2px solid #d6d6d6;
+            padding: 8px;
+            
+        }
+        /* Tabel 2 */
+        .tabel-atas {
+            min-width: 100%;
+            margin-bottom: 20px;
+        }
+        .tabel-atas-responsive {
+            min-height: .01%;
+            overflow-x: auto;
+        }
+        .tabel-atas-responsive td,.tabel-atas-responsive tr,.tabel-atas-responsive th{
+            vertical-align: top;
+            border-bottom: 2px solid #d6d6d6;
+            padding: 8px;
+            
+        }
+        /* Dan lain-lain */
+        .kartu {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+            border-color: #ddd;
+        }
+        .kartu-body {
+            padding: 15px;
+        }
+        .gambar-center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        .container {   
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <!-- Judul Header -->
+            <div class="col-full" style="margin-bottom: 20px;">
+                <h1 style="color: #012554;margin-bottom: 0px;text-align: center;">Biodata Mahasiswa</h1>
+            </div>
+        <!-- End Judul Header  -->
+        <!-- Gambar Mahasiswa -->
+            <div class="col-gambar">
+                <img src="http://mahasiswa.dinus.ac.id/images/foto/A/A11/2021/A11.2021.13301.jpg" width="80%" class="gambar-center">
+            </div>
+        <!-- End Gambar Mahasiswa -->
+        <!-- Biodata -->
+            <div class="col-biodata" style="border-top: 3px solid #D9534F;">
+                <div class="tabel-atas-responsive">
+                    <table class="tabel-atas tabel-atas-bordered">
+                        <tbody>
+                            <tr>
+                                <td width="30%"><b>Nama</b></td>
+                                <td width="1%"><b>:</b></td>
+                                <td>RAJENDRA NOHAN</td>
+                            </tr>
+                            <tr>
+                                <td><b>NIM</b></td>
+                                <td><b>:</b></td>
+                                <td>A11.2021.13301</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dosen Wali</b></td>
+                                <td><b>:</b></td>
+                                <td>ADHITYA NUGRAHA, S.Kom, M.CS</td>
+                            </tr>
+                        
+                            <tr>
+                                <td><b>Status</b></td>
+                                <td><b>:</b></td>
+                                <td>Aktif</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Alamat Semarang</b></td>
+                                <td><b>:</b></td>
+                                <td>Karangrejo Selatan No.29</td>
+                            </tr>
+                            <tr>
+                                <td><b>Alamat Asal</b></td>
+                                <td><b>:</b></td>
+                                <td>Karangrejo Selatan No.29</td>
+                            </tr>
+                            <tr>
+                                <td><b>No Hp</b></td>
+                                <td><b>:</b></td>
+                                <td>0851575_____</td>
+                            </tr><tr>
+                                <td><b>E-Mail</b></td>
+                                <td><b>:</b></td>
+                                <td>
+                                    111202113301@mhs.dinus.ac.id
+                                    <br>
+                                    rajendranohan4@gmail.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Agama</b></td>
+                                <td><b>:</b></td>
+                                <td>Islam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <!-- End Biodata -->
+        <!-- Card -->
+            <div class="col-full" style="margin-top: 30px;">
+                <div class="kartu kartu-default" style="border-radius: 0px;">
+                    <div class="kartu-body">
+                        <h2 style="color: #012554;">Jadwal KRS</h2>
+                        <div class="tabel-responsive">
+                            <table class="tabel tabel-bordered">
+                                <thead style="background-color: #20485A;color: #fff;">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Kode Matakuliah</th>
+                                        <th>Kelompok</th>
+                                        <th>Mata Kuliah</th>
+                                        <th>SKS</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>A11.54101</td>
+                                        <td>A11.4103</td>
+                                        <td>Kalkulus 1</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>A11.54105</td>
+                                        <td>A11.4103</td>
+                                        <td>Dasar Pemrograman</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>A11.54302</td>
+                                        <td>A11.4103</td>
+                                        <td>Matematika Diskrit</td>
+                                        <td>3</td>
+                                        <td>-</td>  
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>a11.54314</td>
+                                        <td>A11.4103</td>
+                                        <td>Pemrograman Berbasis Web</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>A11.54403</td>
+                                        <td>A11.4103</td>
+                                        <td>Organisasi dan Arsitektur Komputer</td>
+                                        <td>3</td>
+                                        <td>-</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>AF201704</td>
+                                        <td>A11.4103</td>
+                                        <td>Dasar Komputasi</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>U201704</td>
+                                        <td>A11.4MATR</td>
+                                        <td>Pengantar Teknologi Informasi</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Card -->
+    </div>
+</body>
+</html>
