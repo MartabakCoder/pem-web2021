@@ -29,10 +29,13 @@
             .col-full {
                 width: 100%;
             }
-            .col-full, .col-gambar, .col-biodata{
+            .col-setengah {
+                width: 47.3%;
+            }
+            .col-full, .col-gambar, .col-biodata, .col-setengah{
                 float: left;
             }
-            .col-full, .col-gambar, .col-biodata{
+            .col-full, .col-gambar, .col-biodata, .col-setengah{
                 position: relative;
                 min-height: 1px;
                 padding-right: 15px;
@@ -89,6 +92,25 @@
         .container {   
             padding-right: 20%;
             padding-left: 20%;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        .resp-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25% ;
+        }
+        .resp-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
@@ -250,6 +272,58 @@
                 </div>
             </div>
         <!-- End Card -->
+        <!-- Card Video-->
+        <div class="col-setengah" style="margin-top: 30px;">
+            <div class="kartu kartu-default" style="border-radius: 0px;">
+                <div class="kartu-body">
+                    <h2 style="color: #012554;">Video Contoh</h2>
+                    <video class="center" controls >
+                        <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-806882-j5FHAPdO8L-high.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- End Card Video -->
+        <!-- Card Youtube -->
+        <div class="col-setengah " style="margin-top: 30px;">
+            <div class="kartu kartu-default" style="border-radius: 0px;">
+                <div class="kartu-body ">
+                    <h2 style="color: #012554;">Video Youtube Inspiratif</h2>
+                    <div class="resp-container">
+                    <iframe class="center resp-iframe"
+                            src="https://www.youtube.com/embed/oqJn-zx-QoE?autoplay=1" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Card Youtube-->
+        <!-- Card Audio -->
+        <div class="col-full" style="margin-top: 30px;">
+            <div class="kartu kartu-default" style="border-radius: 0px;">
+                <div class="kartu-body">
+                    <h2 style="color: #012554;">Lagu Kebangsaan</h2>
+                    
+                    <audio class="center" controls>
+                        <source src="https://www.quackit.com/music/good_enough.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <!-- End Card Audio-->
+        <!-- Card PDF -->
+        <div class="col-full" style="margin-top: 30px;">
+            <div class="kartu kartu-default" style="border-radius: 0px;">
+                <div class="kartu-body">
+                    <h2 style="color: #012554;">PDF Tugas</h2>
+                    <embed width="100%" height="800" src="http://devel.dinustech.com/aboe/materi/2021/PEM-WEB/minggu3/Minggu%203-Praktikum.pdf">
+                </div>
+            </div>
+        </div>
+        <!-- End Card PDF -->
     </div>
 </body>
 </html>
