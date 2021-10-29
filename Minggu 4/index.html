@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PPDB Jalur Zonasi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.42857143;
+            font-family: Arial;
+            margin: 0;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        .box {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+            margin-bottom: 40px;
+        }
+        
+        .judul {
+            
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            color: white;
+            background-color: dodgerblue;
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+        .container {
+            lex: 1 1 auto;
+            padding: 1.25rem;
+        }
+        main{
+            width: 70%;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-grup {
+            margin-bottom: 1rem;
+        }
+        .form-kontrol {
+            display: block;
+            width: 98%;
+            height: calc(2.25rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        @media (min-width: 1284px){
+            .col {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-left: -15px;
+            }
+        }
+        .file-upload {
+            width: 98%;
+            background-color: #ced4da;
+            border-radius: .25rem;
+            display: inline-block;
+            padding: .475rem .75rem ;
+            cursor: pointer;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        textarea.form-kontrol {
+            height: auto;
+        }
+        .select-kustom {
+            transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            display: inline-block;
+            width: 100%;
+            height: calc(2.25rem + 2px);
+            padding: .375rem 1.75rem .375rem .75rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            vertical-align: middle;
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center;">Formulir PPDB Jalur Zonasi Tahun 2020</h1>
+        <form>
+        <div class="box">
+            <div class="judul">
+                <h4>A. INFO PENDAFTARAN</h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-grup">
+                        <label for="InputNISN">NISN</label>
+                        <input type="text" class="form-kontrol" id="InputNISN" placeholder="Ex: 9981892895">
+                        </div>
+                        <div class="form-grup">
+                            <label for="InputTahun">Tahun Lulus</label>
+                            <input type="number" class="form-kontrol" id="InputTahun" placeholder="Ex: 2017">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputSekolah">Asal Sekolah</label>
+                            <input type="text" class="form-kontrol" id="InputSekolah" placeholder="Ex: SD N Julung 2">
+                        </div>
+                        <div class="form-grup">
+                            <label for="InputIjazah">Ijazah(Lampirkan)</label>
+                            <label for="file-upload" class="file-upload">
+                                Upload Ijazah
+                            </label>
+                            <input id="InputIjazah" type="file"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="judul">
+                <h4>B. DATA CALON PESERTA</h4>
+            </div>
+            <div class="container">
+                    <div class="form-grup">
+                      <label for="InputNama">Nama Lengkap</label>
+                      <input type="text" class="form-kontrol" id="InputNama" placeholder="Ex: Rajendra Nohan">
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputTempatTanggal">Tempat/Tanggal Lahir</label>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-kontrol" id="InputTempat" placeholder="Ex: Semarang">
+                            </div>
+                            <div class="col">
+                                <input type="date" class="form-kontrol" id="InputTanggal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputNIK">NIK</label>
+                                <input type="number" class="form-kontrol" id="InputNIK" placeholder="Ex: 337411510960001">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputUmur">Umur (Tahun)</label>
+                                <input type="number" class="form-kontrol" id="InputUmur" placeholder="Ex: 12">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputAkte">Fotocopy Akte yang telah Dilegalisir(Lampirkan)</label>
+                                <label for="file-upload" class="file-upload">
+                                    Upload Fotocopy Akte
+                                </label>
+                                <input id="InputAkte" type="file"/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputJK">Jenis Kelamin</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-kontrol">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label for="inlineRadio1">Laki-laki</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-kontrol">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label for="inlineRadio1">Perempuan</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputAlamat">Alamat</label>
+                        <textarea class="form-kontrol" rows="3">
+                        </textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputDesa/Kel">Desa/Kel</label>
+                                <input type="text" class="form-kontrol" id="InputDesa/Kel" placeholder="Ex: Karangrejo">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputKecamatan">Kecamatan</label>
+                                <input type="text" class="form-kontrol" id="InputKecamatan" placeholder="Ex: Banyumanik">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputKabupaten">Kabupaten</label>
+                                <input type="text" class="form-kontrol" id="InputKabupaten" placeholder="Ex: Kab.Kendal">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputProvinsi">Provinsi</label>
+                                <input type="text" class="form-kontrol" id="InputProvinsi" placeholder="Ex: Jawa Tengah">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputEmail">Email Aktif</label>
+                        <input type="email" class="form-kontrol" id="InputEmail" placeholder="Ex: rajendranohan4@gmail.com">
+                    </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="judul">
+                <h4>C. DATA ORANG TUA</h4> 
+            </div>
+            <div class="container">
+                    <div class="form-grup">
+                      <label for="InputNomorKK">Nomor Kartu Keluarga</label>
+                      <input type="text" class="form-kontrol" id="InputNomorKK" placeholder="Ex: 3374111309070004">
+                    </div>
+                    <div class="form-grup">
+                        <h4>DATA AYAH</h4>
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputNamaAyah">Nama Ayah Kandung</label>
+                        <input type="text" class="form-kontrol" id="InputNamaAyah" placeholder="Ex: Nasser Al-Khelaifi">
+                      </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputAgamaAyah">Agama</label>
+                                <select class="select-kustom">
+                                    <option selected>Pilih disini</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katholik">Katholik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Lain">Lainya</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputPekerjaanAyah">Pekerjaan</label>
+                                <select class="select-kustom">
+                                    <option selected>Pilih disini</option>
+                                    <option value="PNS/ASN">PNS/ASN</option>
+                                    <option value="Tenaga Pengajar">Tenaga Pengajar</option>
+                                    <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
+                                    <option value="Pegawai Swasta">Pegawai Swasta</option>
+                                    <option value="Lain">Lainya</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <h4>DATA IBU</h4>
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputNamaIbu">Nama Ibu Kandung</label>
+                        <input type="text" class="form-kontrol" id="InputNamaIbu" placeholder="Ex: Nasser Al-Khelaifi">
+                      </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputAgamaIbu">Agama</label>
+                                <select class="select-kustom">
+                                    <option selected>Pilih disini</option>
+                                    <option value="Islam">Islam</option>
+                                    <option value="Kristen">Kristen</option>
+                                    <option value="Katholik">Katholik</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Lain">Lainya</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputPekerjaanIbu">Pekerjaan</label>
+                                <select class="select-kustom">
+                                    <option selected>Pilih disini</option>
+                                    <option value="PNS/ASN">PNS/ASN</option>
+                                    <option value="Tenaga Pengajar">Tenaga Pengajar</option>
+                                    <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
+                                    <option value="Pegawai Swasta">Pegawai Swasta</option>
+                                    <option value="Lain">Lainya</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grup">
+                        <label for="InputAlamat">Alamat</label>
+                        <textarea class="form-kontrol" rows="3">
+                        </textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputDesa/Kel">Desa/Kel</label>
+                                <input type="text" class="form-kontrol" id="InputDesa/Kel" placeholder="Ex: Karangrejo">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputKecamatan">Kecamatan</label>
+                                <input type="text" class="form-kontrol" id="InputKecamatan" placeholder="Ex: Banyumanik">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputKabupaten">Kabupaten</label>
+                                <input type="text" class="form-kontrol" id="InputKabupaten" placeholder="Ex: Kab.Kendal">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-grup">
+                                <label for="InputProvinsi">Provinsi</label>
+                                <input type="text" class="form-kontrol" id="InputProvinsi" placeholder="Ex: Jawa Tengah">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </form>
+    </main>
+</body>
+</html>
