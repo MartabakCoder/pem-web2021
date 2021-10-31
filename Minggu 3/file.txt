@@ -1,0 +1,7 @@
+<header>
+            <img src="https://i.ibb.co/5FjDRDL/4105.png" height="48.69" alt="" srcset="">
+        <div class="header-right">
+          <a href="#contact">Register</a>
+          <a class="active" href="#home">Login</a>
+        </div>
+    </header>
