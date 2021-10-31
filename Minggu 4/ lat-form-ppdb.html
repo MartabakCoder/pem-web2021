@@ -123,6 +123,18 @@
             -moz-appearance: none;
             appearance: none;
         }
+        .tombolSimpan {
+            background-color: dodgerblue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -271,113 +283,114 @@
                 <h4>C. DATA ORANG TUA</h4> 
             </div>
             <div class="container">
-                    <div class="form-grup">
-                      <label for="InputNomorKK">Nomor Kartu Keluarga</label>
-                      <input type="text" class="form-kontrol" id="InputNomorKK" placeholder="Ex: 3374111309070004">
+                <div class="form-grup">
+                    <label for="InputNomorKK">Nomor Kartu Keluarga</label>
+                    <input type="text" class="form-kontrol" id="InputNomorKK" placeholder="Ex: 3374111309070004">
+                </div>
+                <div class="form-grup">
+                    <h4>DATA AYAH</h4>
+                </div>
+                <div class="form-grup">
+                    <label for="InputNamaAyah">Nama Ayah Kandung</label>
+                    <input type="text" class="form-kontrol" id="InputNamaAyah" placeholder="Ex: Nasser Al-Khelaifi">
                     </div>
-                    <div class="form-grup">
-                        <h4>DATA AYAH</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputAgamaAyah">Agama</label>
+                            <select class="select-kustom">
+                                <option selected>Pilih disini</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katholik">Katholik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Lain">Lainya</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-grup">
-                        <label for="InputNamaAyah">Nama Ayah Kandung</label>
-                        <input type="text" class="form-kontrol" id="InputNamaAyah" placeholder="Ex: Nasser Al-Khelaifi">
-                      </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputAgamaAyah">Agama</label>
-                                <select class="select-kustom">
-                                    <option selected>Pilih disini</option>
-                                    <option value="Islam">Islam</option>
-                                    <option value="Kristen">Kristen</option>
-                                    <option value="Katholik">Katholik</option>
-                                    <option value="Hindu">Hindu</option>
-                                    <option value="Lain">Lainya</option>
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputPekerjaanAyah">Pekerjaan</label>
+                            <select class="select-kustom">
+                                <option selected>Pilih disini</option>
+                                <option value="PNS/ASN">PNS/ASN</option>
+                                <option value="Tenaga Pengajar">Tenaga Pengajar</option>
+                                <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
+                                <option value="Pegawai Swasta">Pegawai Swasta</option>
+                                <option value="Lain">Lainya</option>
                                 </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputPekerjaanAyah">Pekerjaan</label>
-                                <select class="select-kustom">
-                                    <option selected>Pilih disini</option>
-                                    <option value="PNS/ASN">PNS/ASN</option>
-                                    <option value="Tenaga Pengajar">Tenaga Pengajar</option>
-                                    <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
-                                    <option value="Pegawai Swasta">Pegawai Swasta</option>
-                                    <option value="Lain">Lainya</option>
-                                  </select>
-                            </div>
                         </div>
                     </div>
-                    <div class="form-grup">
-                        <h4>DATA IBU</h4>
+                </div>
+                <div class="form-grup">
+                    <h4>DATA IBU</h4>
+                </div>
+                <div class="form-grup">
+                    <label for="InputNamaIbu">Nama Ibu Kandung</label>
+                    <input type="text" class="form-kontrol" id="InputNamaIbu" placeholder="Ex: Nasser Al-Khelaifi">
                     </div>
-                    <div class="form-grup">
-                        <label for="InputNamaIbu">Nama Ibu Kandung</label>
-                        <input type="text" class="form-kontrol" id="InputNamaIbu" placeholder="Ex: Nasser Al-Khelaifi">
-                      </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputAgamaIbu">Agama</label>
-                                <select class="select-kustom">
-                                    <option selected>Pilih disini</option>
-                                    <option value="Islam">Islam</option>
-                                    <option value="Kristen">Kristen</option>
-                                    <option value="Katholik">Katholik</option>
-                                    <option value="Hindu">Hindu</option>
-                                    <option value="Lain">Lainya</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputPekerjaanIbu">Pekerjaan</label>
-                                <select class="select-kustom">
-                                    <option selected>Pilih disini</option>
-                                    <option value="PNS/ASN">PNS/ASN</option>
-                                    <option value="Tenaga Pengajar">Tenaga Pengajar</option>
-                                    <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
-                                    <option value="Pegawai Swasta">Pegawai Swasta</option>
-                                    <option value="Lain">Lainya</option>
-                                  </select>
-                            </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputAgamaIbu">Agama</label>
+                            <select class="select-kustom">
+                                <option selected>Pilih disini</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katholik">Katholik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Lain">Lainya</option>
+                                </select>
                         </div>
                     </div>
-                    <div class="form-grup">
-                        <label for="InputAlamat">Alamat</label>
-                        <textarea class="form-kontrol" rows="3">
-                        </textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputDesa/Kel">Desa/Kel</label>
-                                <input type="text" class="form-kontrol" id="InputDesa/Kel" placeholder="Ex: Karangrejo">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputKecamatan">Kecamatan</label>
-                                <input type="text" class="form-kontrol" id="InputKecamatan" placeholder="Ex: Banyumanik">
-                            </div>
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputPekerjaanIbu">Pekerjaan</label>
+                            <select class="select-kustom">
+                                <option selected>Pilih disini</option>
+                                <option value="PNS/ASN">PNS/ASN</option>
+                                <option value="Tenaga Pengajar">Tenaga Pengajar</option>
+                                <option value="Tenaga Kesehatan">Tenaga Kesehatan</option>
+                                <option value="Pegawai Swasta">Pegawai Swasta</option>
+                                <option value="Lain">Lainya</option>
+                                </select>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputKabupaten">Kabupaten</label>
-                                <input type="text" class="form-kontrol" id="InputKabupaten" placeholder="Ex: Kab.Kendal">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-grup">
-                                <label for="InputProvinsi">Provinsi</label>
-                                <input type="text" class="form-kontrol" id="InputProvinsi" placeholder="Ex: Jawa Tengah">
-                            </div>
+                </div>
+                <div class="form-grup">
+                    <label for="InputAlamat">Alamat</label>
+                    <textarea class="form-kontrol" rows="3">
+                    </textarea>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputDesa/Kel">Desa/Kel</label>
+                            <input type="text" class="form-kontrol" id="InputDesa/Kel" placeholder="Ex: Karangrejo">
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputKecamatan">Kecamatan</label>
+                            <input type="text" class="form-kontrol" id="InputKecamatan" placeholder="Ex: Banyumanik">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputKabupaten">Kabupaten</label>
+                            <input type="text" class="form-kontrol" id="InputKabupaten" placeholder="Ex: Kab.Kendal">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-grup">
+                            <label for="InputProvinsi">Provinsi</label>
+                            <input type="text" class="form-kontrol" id="InputProvinsi" placeholder="Ex: Jawa Tengah">
+                        </div>
+                        <button type="submit" class="tombolSimpan" style="float: right;">Simpan</button>
+                    </div>
+                </div>
             </div>
           </div>
         </form>
