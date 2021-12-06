@@ -1,0 +1,43 @@
+body{
+    background: #d4af37;
+    font-family: roboto;
+    text-align: center;
+    }
+    h1{
+    color: #fff;
+    }
+    .center{
+    margin: 10px auto;
+    width: 1150px;
+    }
+    .cube{
+    background: none;
+    width: 500px;
+    float: left;
+    height: 250px;
+    margin: 30px;
+    }
+    .gradient1 {
+    background: linear-gradient(#8E806A, #E4CDA7); 
+    background: -webkit-linear-gradient(#8E806A, #E4CDA7);
+    background: -o-linear-gradient(#8E806A, #E4CDA7);
+    background: -moz-linear-gradient(#8E806A, #E4CDA7);
+    }
+    .gradient2 {
+    background: linear-gradient(to right, #8E806A , #C3B091, #E4CDA7);
+    background: -webkit-linear-gradient(left, #8E806A , #C3B091, #E4CDA7);
+    background: -o-linear-gradient(right, #8E806A, #C3B091, #E4CDA7);
+    background: -moz-linear-gradient(right, #8E806A, #C3B091, #E4CDA7);
+    }
+    .gradient3 {
+        background: radial-gradient(#8E806A, #C3B091, #E4CDA7);
+        background: -webkit-radial-gradient(#8E806A, #C3B091, #E4CDA7);
+        background: -o-radial-gradient(#8E806A, #C3B091, #E4CDA7);
+        background: -moz-radial-gradient(#8E806A, #C3B091, #E4CDA7);
+    }
+    .gradient4 {
+        background: radial-gradient(circle, #8E806A, #C3B091, #E4CDA7);
+        background: -webkit-radial-gradient(circle, #8E806A, #C3B091, #E4CDA7);
+        background: -o-radial-gradient(circle, #8E806A, #C3B091, #E4CDA7);
+        background: -moz-radial-gradient(circle, #8E806A, #C3B091, #E4CDA7);
+    }

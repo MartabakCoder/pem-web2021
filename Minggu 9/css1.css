@@ -1,0 +1,47 @@
+body{
+    background: #d4af37;
+    font-family: roboto;
+    text-align: center;
+    }
+    h1{
+    color: #fff;
+    }
+    .center{
+    margin: 10px auto;
+    width: 1150px;
+    }
+    .cube{
+    background: #fcfcfc;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    height: 200px;
+    }
+    .cube1{
+    border-radius: 10px 10px 10px 10px;
+    }
+    .cube2{
+    border-radius: 40px 20px 60px 90px;
+    }
+    .cube3{
+    border-radius: 2px 140px 20px 60px;
+    }
+    .cube3{
+    border-radius: 20px 10px 80px 10px;
+    }
+    .cube4{
+    border-radius: 0px 50px 0px 50px;
+    }
+    .cube5{
+    border-radius: 0px 0px 0px 0px;
+    }
+    .cube6{
+    border-radius: 100%;
+    }
+    .cube7{
+    border-radius: 40px 10px;
+    }
+    .cube8{
+    border-radius: 10px 10px 50% 50%;
+    }

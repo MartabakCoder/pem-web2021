@@ -1,0 +1,19 @@
+    body{
+    background: #d4af37;
+    font-family: roboto;
+    color: #fff;
+    }
+    h1{
+    width: 550px;
+    }
+    .cube{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    animation-name: cube_animation;
+    animation-duration: 2s;
+    }
+    @keyframes cube_animation{
+    from{ background: blue;}
+    to{background: red;}
+    }
